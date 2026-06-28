@@ -1,0 +1,88 @@
+(footprint "Motor_Wire_Pads_8mm"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -2 0)
+		(layer "F.SilkS")
+		(uuid "3bb419c9-fb13-4175-84a7-94f89d5e799f")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Value" "Motor_Wire_Pads_8mm"
+		(at 0 2 0)
+		(layer "F.Fab")
+		(uuid "6281c250-edd3-4bb5-bb38-3422628a537b")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "88d31e66-d295-40d7-9a21-740ab9a2012b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d892d3c9-4c2b-405d-b9a6-218b4eccb015")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -2.5 -1)
+		(end 2.5 1)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "21efab46-28ef-4fea-912c-926299da301b")
+	)
+	(fp_rect
+		(start -2.25 -0.75)
+		(end 2.25 0.75)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "e197e5fe-d3e2-4e3b-99d1-b677f34af68e")
+	)
+	(pad "N" smd rect
+		(at 1.5 0)
+		(size 1.5 1.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "24688c13-db79-44eb-8b1e-ad4398079103")
+	)
+	(pad "P" smd rect
+		(at -1.5 0)
+		(size 1.5 1.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "74987a2b-2170-4703-abb7-fd66ee4f4261")
+	)
+	(embedded_fonts no)
+)
