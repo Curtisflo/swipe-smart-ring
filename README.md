@@ -9,6 +9,12 @@ schematic, and the custom footprints used by both.
 It's small — the board outline is **38 × 10 mm** (about the footprint of a
 stick of gum).
 
+The board isn't meant to stay flat. The middle 8 mm is a **flex** section: the
+rigid signet and BLE ends fold relative to each other there, so the board follows
+the curve of the finger inside the housing.
+
+![Rigid-flex bend at the flex zone](preview-3d.png)
+
 ## What this is
 
 A 2-layer **rigid-flex** board that wraps around a finger. It carries a Nordic
@@ -77,6 +83,7 @@ board, and the `custom.pretty` library is included for editing.
 - `bom.csv` — bill of materials for this board
 - `ring-schematic.pdf` — schematic as a PDF (no KiCad needed)
 - `preview.png` — rendered board, top and bottom, with dimensions
+- `preview-3d.png` — 3D view of the rigid-flex fold at the flex zone
 
 ## License
 
