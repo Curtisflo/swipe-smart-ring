@@ -5,8 +5,7 @@ touch. This repo contains the **ring board** KiCad project: PCB layout,
 schematic, and the custom footprints used by both.
 
 **Status:** prototype, not yet fabricated or tested. Routed and verified in
-KiCad 9 — DRC passes with **0 errors and 0 unconnected nets** (2 minor warnings
-remain on the VBAT power net: a redundant stacked via and a short copper stub).
+KiCad 9 — **DRC clean: 0 errors, 0 warnings, 0 unconnected nets.**
 
 ![Ring board, top and bottom, dimensioned](preview.png)
 

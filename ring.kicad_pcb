@@ -4456,14 +4456,6 @@
 		(uuid "6aac7af2-0096-49a1-ba12-c59932af80c1")
 	)
 	(segment
-		(start 35.9 1)
-		(end 36.75 0.9428)
-		(width 0.15)
-		(layer "F.Cu")
-		(net 3)
-		(uuid "6daa278e-5baf-493a-903e-ce81627d596b")
-	)
-	(segment
 		(start 13 4.9)
 		(end 13.75 4.9)
 		(width 0.15)
@@ -4736,14 +4728,6 @@
 		(uuid "28e91950-4963-42c8-909b-f2fcf52cc1c3")
 	)
 	(via
-		(at 12.55 2.4)
-		(size 0.4)
-		(drill 0.2)
-		(layers "F.Cu" "B.Cu")
-		(net 3)
-		(uuid "321095b9-4958-442d-819e-b3596da0574e")
-	)
-	(via
 		(at 34.45 1)
 		(size 0.4)
 		(drill 0.2)
@@ -4798,14 +4782,6 @@
 		(layers "F.Cu" "B.Cu")
 		(net 3)
 		(uuid "7e7651f3-b6c2-4a60-baab-c502c0ebb58f")
-	)
-	(via
-		(at 35.9 1)
-		(size 0.4)
-		(drill 0.2)
-		(layers "F.Cu" "B.Cu")
-		(net 3)
-		(uuid "8ae77322-118b-4d28-a583-21e526bdb9fb")
 	)
 	(via
 		(at 29.41 7.652)
@@ -5022,14 +4998,6 @@
 		(layer "B.Cu")
 		(net 3)
 		(uuid "fb30cc74-3df6-4e28-b08a-0bc4a2150731")
-	)
-	(segment
-		(start 12.55 3.3328)
-		(end 12.55 2.4)
-		(width 0.15)
-		(layer "B.Cu")
-		(net 3)
-		(uuid "fe2c0105-c054-44f6-9691-1d7ae662dc42")
 	)
 	(segment
 		(start 30.3 7.84)
@@ -8113,17 +8081,4 @@
 		)
 	)
 	(embedded_fonts no)
-	(gr_line (start 18.0 -1.5) (end 18.0 11.5)
-		(stroke (width 0.12) (type dash)) (layer "Dwgs.User") (uuid "2694c18b-c4bb-4b79-9b35-aba1bf254031"))
-	(gr_line (start 26.0 -1.5) (end 26.0 11.5)
-		(stroke (width 0.12) (type dash)) (layer "Dwgs.User") (uuid "5f8f3266-a2c3-430e-982f-1715a3c9d799"))
-	(gr_text "FLEX"
-		(at 22.0 -2.6 0) (layer "Dwgs.User") (uuid "c5e44a97-304b-4d1a-896c-6fb4e8e5625c")
-		(effects (font (size 1.2 1.2) (thickness 0.15)) (justify left)))
-	(gr_text "FLEX ZONE  x=18-26mm (8mm wide) - rigid-flex bend ~115deg, folds in housing"
-		(at 0.0 13.0 0) (layer "Dwgs.User") (uuid "4c1cc7b8-bfdd-42cc-8286-45a44df60b8d")
-		(effects (font (size 0.9 0.9) (thickness 0.15)) (justify left)))
-	(gr_text "rigid 1.0mm / flex core 0.1mm - rigid-flex stackup + coverlay to be defined by fab"
-		(at 0.0 14.6 0) (layer "Dwgs.User") (uuid "07a3d3a6-9421-49fe-916a-36611bc0003b")
-		(effects (font (size 0.9 0.9) (thickness 0.15)) (justify left)))
 )
