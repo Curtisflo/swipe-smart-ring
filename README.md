@@ -11,7 +11,10 @@ stick of gum).
 
 The board isn't meant to stay flat. The middle 8 mm is a **flex** section: the
 rigid signet and BLE ends fold relative to each other there, so the board follows
-the curve of the finger inside the housing.
+the curve of the finger inside the housing. In the housing the BLE end sits
+**115°** around the ring from the signet, and the rigid ends stay flat — so the
+8 mm flex takes that whole ~115° bend (about a 4 mm radius, well inside the
+material's 0.6 mm minimum).
 
 ![Rigid-flex bend at the flex zone](preview-3d.png)
 
