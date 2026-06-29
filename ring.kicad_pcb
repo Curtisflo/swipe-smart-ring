@@ -8113,4 +8113,17 @@
 		)
 	)
 	(embedded_fonts no)
+	(gr_line (start 18.0 -1.5) (end 18.0 11.5)
+		(stroke (width 0.12) (type dash)) (layer "Dwgs.User") (uuid "2694c18b-c4bb-4b79-9b35-aba1bf254031"))
+	(gr_line (start 26.0 -1.5) (end 26.0 11.5)
+		(stroke (width 0.12) (type dash)) (layer "Dwgs.User") (uuid "5f8f3266-a2c3-430e-982f-1715a3c9d799"))
+	(gr_text "FLEX"
+		(at 22.0 -2.6 0) (layer "Dwgs.User") (uuid "c5e44a97-304b-4d1a-896c-6fb4e8e5625c")
+		(effects (font (size 1.2 1.2) (thickness 0.15)) (justify left)))
+	(gr_text "FLEX ZONE  x=18-26mm (8mm wide) - rigid-flex bend ~115deg, folds in housing"
+		(at 0.0 13.0 0) (layer "Dwgs.User") (uuid "4c1cc7b8-bfdd-42cc-8286-45a44df60b8d")
+		(effects (font (size 0.9 0.9) (thickness 0.15)) (justify left)))
+	(gr_text "rigid 1.0mm / flex core 0.1mm - rigid-flex stackup + coverlay to be defined by fab"
+		(at 0.0 14.6 0) (layer "Dwgs.User") (uuid "07a3d3a6-9421-49fe-916a-36611bc0003b")
+		(effects (font (size 0.9 0.9) (thickness 0.15)) (justify left)))
 )

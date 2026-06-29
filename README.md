@@ -4,6 +4,10 @@ The main board for a BLE smart ring with IMU-based gesture input and capacitive
 touch. This repo contains the **ring board** KiCad project: PCB layout,
 schematic, and the custom footprints used by both.
 
+**Status:** prototype, not yet fabricated or tested. Routed and verified in
+KiCad 9 — DRC passes with **0 errors and 0 unconnected nets** (2 minor warnings
+remain on the VBAT power net: a redundant stacked via and a short copper stub).
+
 ![Ring board, top and bottom, dimensioned](preview.png)
 
 It's small — the board outline is **38 × 10 mm** (about the footprint of a
@@ -17,6 +21,12 @@ the curve of the finger inside the housing. In the housing the BLE end sits
 material's 0.6 mm minimum).
 
 ![Rigid-flex bend at the flex zone](preview-3d.png)
+
+A note on the rigid-flex: the flex zone is captured here as **design intent** —
+the layout is zoned signet/flex/BLE, and the flex region is marked with a fab
+note on the board's `User.Drawings` layer. The `ring.kicad_pcb` itself is a flat
+2-layer prototype; the actual rigid-flex **stackup and coverlay callouts are left
+to the fabricator**.
 
 ## What this is
 
