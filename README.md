@@ -4,7 +4,10 @@ The main board for a BLE smart ring with IMU-based gesture input and capacitive
 touch. This repo contains the **ring board** KiCad project: PCB layout,
 schematic, and the custom footprints used by both.
 
-![Ring board, top and bottom](preview.png)
+![Ring board, top and bottom, dimensioned](preview.png)
+
+It's small — the board outline is **38 × 10 mm** (about the footprint of a
+stick of gum).
 
 ## What this is
 
@@ -73,7 +76,7 @@ board, and the `custom.pretty` library is included for editing.
 - `custom.pretty/` — custom footprints
 - `bom.csv` — bill of materials for this board
 - `ring-schematic.pdf` — schematic as a PDF (no KiCad needed)
-- `preview.png` — rendered board, top and bottom
+- `preview.png` — rendered board, top and bottom, with dimensions
 
 ## License
 
