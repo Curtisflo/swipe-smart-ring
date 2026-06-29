@@ -4,7 +4,7 @@ The main board for a BLE smart ring with IMU-based gesture input and capacitive
 touch. This repo contains the **ring board** KiCad project: PCB layout,
 schematic, and the custom footprints used by both.
 
-![Ring board, top](preview.png)
+![Ring board, top and bottom](preview.png)
 
 ## What this is
 
@@ -42,6 +42,10 @@ The board is split into three zones along its length:
 | J2  | Molex 5034800440 | 4-pin FPC — electrode harness (Qvar×2, GND×2) |
 | SP1–SP4 | KYOCERA AVX 70-9155 | Spring contacts — battery (×2) and motor (×2) |
 
+Full line-item list (passives, MPNs, prices) in [`bom.csv`](bom.csv). The
+battery (Seiko MS920SE coin cell) and haptic motor are off-board — they sit in
+the housing and contact the spring pads — and are listed at the end of the BOM.
+
 ## Design notes
 
 - **No LDO.** VDD = VBAT throughout — the nRF52832 (1.7–3.6 V) runs directly
@@ -67,8 +71,9 @@ board, and the `custom.pretty` library is included for editing.
 - `ring.kicad_sch` — schematic
 - `ring.kicad_pro` — KiCad project
 - `custom.pretty/` — custom footprints
+- `bom.csv` — bill of materials for this board
 - `ring-schematic.pdf` — schematic as a PDF (no KiCad needed)
-- `preview.png` / `preview-bottom.png` — rendered board
+- `preview.png` — rendered board, top and bottom
 
 ## License
 

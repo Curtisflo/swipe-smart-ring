@@ -1,0 +1,28 @@
+Reference,Function,MPN,Manufacturer,Package,Price_qty1,DigiKey_Stock,Mouser_Stock,Status,Notes
+C1,Decoupling,GRM155R61A104KA01D,Murata,0402 100nF,$0.10,1230000,,confirmed,LSM6DSV16X Vdd
+C2,Decoupling,GRM155R61A104KA01D,Murata,0402 100nF,$0.10,1230000,,confirmed,LSM6DSV16X Vdd_IO
+C7,Qvar filter,TBD,,0402 110pF,~$0.10,,,confirmed,Qvar electrode 1
+C8,Qvar filter,TBD,,0402 110pF,~$0.10,,,confirmed,Qvar electrode 2
+D1,Motor flyback diode,BAT54W-E3-08,Vishay,SOD-123,$0.14,22300,,confirmed,Clamps motor back-EMF to VDD. NOT reverse polarity protection.
+D2,Status LED 1,BL-HG0E136J-TRB,American Bright,0605 1.6x1.5x0.55mm,$0.05,152905,,confirmed,Bi-color red (Vf=2.0V) + yellow-green (Vf=2.2V). Signet indicator.
+D3,Status LED 2,BL-HG0E136J-TRB,American Bright,0605 1.6x1.5x0.55mm,$0.05,152905,,confirmed,Same. (Reduced from 4 LEDs to 2 — see design-notes.)
+ESD1,Qvar ESD protection,ESDALCL5-1BM2,STMicroelectronics,SOD-882 1.0x0.6mm,$0.39,448,7633,confirmed — optional for proto,Protects Qvar1 electrode pin from ESD via skin contact.
+ESD2,Qvar ESD protection,ESDALCL5-1BM2,STMicroelectronics,SOD-882 1.0x0.6mm,$0.39,448,7633,confirmed — optional for proto,Protects Qvar2 electrode pin.
+J1,FPC connector,5034800240,Molex,FPC 0.5mm 2-pin,—,,,confirmed,"2-pin FPC — pogo/charge harness (VBUS, GND)"
+J2,FPC connector,5034800440,Molex,FPC 0.5mm 4-pin,—,,,confirmed,"4-pin FPC — electrode harness (QVAR1_RAW, QVAR2_RAW, GND, GND)"
+Q1,Motor MOSFET,IRLML6344TRPBF,Infineon,SOT-23,$0.54,171800,,confirmed,Vgs_th 1.1V. Driven from VBAT GPIO (~3.0V). Motor on battery rail. Note: Vgs at 3.0V is above threshold — confirmed OK.
+R1,I2C pull-up,TBD,,0402 10k,$0.02,,,confirmed,SDA — 10k per LSM6DSV16X datasheet
+R2,I2C pull-up,TBD,,0402 10k,$0.02,,,confirmed,SCL
+R3,Charge current limit,TBD,,0402 2.2k,$0.02,,,redesign needed,MS920 charge resistor. From VBUS (5V) through R3 to battery. I_charge = (5V - 3.1V) / 2.2k ≈ 0.86mA (~0.08C). See Seiko datasheet for recommended charge method.
+R4,Qvar series,TBD,,0402 500R,$0.02,,,confirmed,Qvar electrode 1 series resistor
+R5,Qvar series,TBD,,0402 500R,$0.02,,,confirmed,Qvar electrode 2 series resistor
+R6,LED current limit,TBD,,0402 100R,$0.02,,,confirmed,Red channel (2 LEDs ganged parallel at 5mA each = 10mA). At 3.0V VBAT: (3.0-2.0)/0.010=100Ω.
+R7,LED current limit,TBD,,0402 82R,$0.02,,,confirmed,"Yellow-green channel (2 LEDs ganged). At 3.0V: (3.0-2.2)/0.010=80Ω, use 82Ω E12. May dim below 2.8V battery."
+SP1,Battery + spring contact,709155001610004,KYOCERA AVX,2.70x1.75x1.0mm,$0.15,6331,,confirmed,"BeCu leaf spring, gold/nickel plated. Presses against MS920SE + solder tab. 1.0mm nominal height (0.75-1.25mm range). SMD reflow."
+SP2,Battery - spring contact,709155001610004,KYOCERA AVX,2.70x1.75x1.0mm,$0.15,6331,,confirmed,Same part as SP1. Presses against MS920SE - solder tab.
+SP3,Motor VBAT spring contact,709155001610004,KYOCERA AVX,2.70x1.75x1.0mm,$0.15,6331,,confirmed,Same part as SP1. Motor + wire presses against spring when signet housing closes.
+SP4,Motor MOTOR_N spring contact,709155001610004,KYOCERA AVX,2.70x1.75x1.0mm,$0.15,6331,,confirmed,Same part as SP1. Motor - wire presses against spring when signet housing closes.
+U1,BLE module,ANNA-B112-02B,u-blox,SMD-52 6.5x6.5x1.2mm,$5.25,464,5279,confirmed,nRF52832. Chip antenna + tuning strip (~6.5mm). Tiny no-GND zone. Proven at ring-scale PCBs (250m range on 46x8mm board). FCC/IC/CE certified. Replaces ISP1807.
+U2,IMU + Qvar touch,LSM6DSV16X,STMicroelectronics,LGA-14 2.5x3x0.83mm,~$4.10,0,19900 on order,confirmed — stock risk,Out of stock everywhere. Mouser has 19.9k on order. No alternative for Qvar+IMU combo.
+BT1,Battery,MS920SE-FL27E,Seiko Instruments,9.5mm dia x 2.1mm coin,$2.63,9942,,confirmed,11mAh 3.0V rechargeable Li-MnO2. SMD solder tab. ~3.5 day battery life at 0.13mA avg. Charge via resistor-limited current from VBUS. Fits ring envelope trivially (9.5mm dia).
+M1,Haptic motor,VCLP0820B004L,Vybronics,8mm dia x 2.0mm,$3.09,3994,,confirmed,"Low current variant: 35mA max rated, 50mA starting. 0.25Grms vibration. Wire leads press against SP3/SP4 spring contacts when signet housing closes. Self-adhesive tape included."
