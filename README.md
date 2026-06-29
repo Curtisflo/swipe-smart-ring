@@ -96,6 +96,7 @@ board, and the `custom.pretty` library is included for editing.
 - `ring-schematic.pdf` — schematic as a PDF (no KiCad needed)
 - `preview.png` — rendered board, top and bottom, with dimensions
 - `preview-3d.png` — 3D view of the rigid-flex fold at the flex zone
+- `fab/` — Gerbers and Excellon drill files (KiCad 9 export), ready to order
 
 ## License
 
