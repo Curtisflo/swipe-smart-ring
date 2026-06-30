@@ -18,6 +18,7 @@ R4,Qvar series,RC0402FR-07499RL,Yageo,0402 500R,$0.02,,,confirmed,Qvar electrode
 R5,Qvar series,RC0402FR-07499RL,Yageo,0402 500R,$0.02,,,confirmed,Qvar electrode 2 series resistor (499R = nearest E96 1% to 500R)
 R6,LED current limit,RC0402FR-07100RL,Yageo,0402 100R,$0.02,,,confirmed,Red channel (2 LEDs ganged parallel at 5mA each = 10mA). At 3.0V VBAT: (3.0-2.0)/0.010=100Ω.
 R7,LED current limit,RC0402FR-0782RL,Yageo,0402 82R,$0.02,,,confirmed,"Yellow-green channel (2 LEDs ganged). At 3.0V: (3.0-2.2)/0.010=80Ω, use 82Ω E12. May dim below 2.8V battery."
+R8,Q1 gate pull-down,RC0402FR-07100KL,Yageo,0402 100k,$0.02,,,confirmed,"Holds Q1 gate low while HAPTIC_EN is hi-Z (boot/reset/firmware crash) — prevents an uncommanded motor run on a floating gate."
 SP1,Battery + spring contact,709155001610004,KYOCERA AVX,2.70x1.75x1.0mm,$0.15,6331,,confirmed,"BeCu leaf spring, gold/nickel plated. Presses against MS920SE + solder tab. 1.0mm nominal height (0.75-1.25mm range). SMD reflow."
 SP2,Battery - spring contact,709155001610004,KYOCERA AVX,2.70x1.75x1.0mm,$0.15,6331,,confirmed,Same part as SP1. Presses against MS920SE - solder tab.
 SP3,Motor VBAT spring contact,709155001610004,KYOCERA AVX,2.70x1.75x1.0mm,$0.15,6331,,confirmed,Same part as SP1. Motor + wire presses against spring when signet housing closes.

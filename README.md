@@ -7,7 +7,7 @@ schematic, and the custom footprints used by both.
 **Status:** prototype, not yet fabricated or tested. Routed and verified in
 KiCad 9 — **DRC clean: 0 errors, 0 warnings, 0 unconnected nets.**
 
-![Ring board, top and bottom, dimensioned](preview.png)
+![Ring board, top and bottom](preview.png)
 
 It's small — the board outline is **38 × 10 mm** (about the footprint of a
 stick of gum).
@@ -22,10 +22,10 @@ material's 0.6 mm minimum).
 ![Rigid-flex bend at the flex zone](preview-3d.png)
 
 A note on the rigid-flex: the flex zone is captured here as **design intent** —
-the layout is zoned signet/flex/BLE, and the flex region is marked with a fab
-note on the board's `User.Drawings` layer. The `ring.kicad_pcb` itself is a flat
-2-layer prototype; the actual rigid-flex **stackup and coverlay callouts are left
-to the fabricator**.
+the layout is zoned signet (18 mm) / flex (8 mm) / BLE (12 mm) along the board's
+length, with the bend taken by the middle 8 mm. The `ring.kicad_pcb` itself is a
+flat 2-layer prototype; the actual rigid-flex **stackup and coverlay callouts are
+left to the fabricator**.
 
 ## What this is
 
@@ -78,6 +78,8 @@ the housing and contact the spring pads — and are listed at the end of the BOM
   ~0.86 mA into the MS920).
 - **Layers, not vias.** The fine-pitch parts (ANNA's inner pads, the LSM6DSV16X)
   are fanned out on 2 layers rather than escalating to 4-layer / via-in-pad.
+  Vias are 0.3 mm (0.15 mm drill) — standard fab capability, sized so the
+  LSM6DSV16X's 0.5 mm-pitch escapes clear the 0.127 mm rule.
 
 The full product also includes a pogo charge-contact board, a Qvar electrode
 flex, and a USB-C dock — those are not part of this repo.
@@ -94,7 +96,7 @@ board, and the `custom.pretty` library is included for editing.
 - `custom.pretty/` — custom footprints
 - `bom.csv` — bill of materials for this board
 - `ring-schematic.pdf` — schematic as a PDF (no KiCad needed)
-- `preview.png` — rendered board, top and bottom, with dimensions
+- `preview.png` — rendered board, top and bottom (KiCad 9, 38 × 10 mm)
 - `preview-3d.png` — 3D view of the rigid-flex fold at the flex zone
 - `fab/` — Gerbers and Excellon drill files (KiCad 9 export), ready to order
 
